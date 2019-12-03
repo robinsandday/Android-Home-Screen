@@ -5,7 +5,7 @@
     <title>Robins & Day</title>
     <link href="style.css" rel="stylesheet">
     <script src="index.js" defer></script>
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest"   id="my-manifest-placeholder">
     <style>
         html body {
             width: 100%;
@@ -34,9 +34,28 @@
             calcHeight();
             var urlpart = location.href.split('=');
             var id = "";
-            alert(urlpart[1])
+           
             if (urlpart.length > 1) {
                 $("#preview-frame").attr("src", $("#preview-frame").attr("src") + urlpart[1]);
+                var myDynamicManifest = {
+                    "background_color": "White",
+                    "description": "Robins & Day Knack App.",
+                    "display": "fullscreen",
+                    "icons": [
+                        {
+                            "src": "icon/app-icon.png",
+                            "sizes": "144x144",
+                            "type": "image/png"
+                        }
+                    ],
+                    "name": "Robins & Day",
+                    "short_name": "Robins & Day",
+                    "start_url": "/Android-Home-Screen/index.html?id=" + urlpart[1]
+                }
+                const stringManifest = JSON.stringify(myDynamicManifest);
+                const blob = new Blob([stringManifest], { type: 'application/json' });
+                const manifestURL = URL.createObjectURL(blob);
+                document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
 
             }
         });
@@ -45,7 +64,9 @@
             calcHeight();
         }).load(function () {
             calcHeight();
-        });
+            });
+
+
 
     </script>
 </head>
