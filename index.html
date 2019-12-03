@@ -36,7 +36,7 @@
             var id = "";
            
             if (urlpart.length > 1) {
-                $("#preview-frame").attr("src", $("#preview-frame").attr("src") + urlpart[1]);
+                $("#preview-frame").attr("src", urlpart[1]);
                 var myDynamicManifest = {
                     "background_color": "White",
                     "description": "Robins & Day Knack App.",
@@ -65,7 +65,7 @@
             calcHeight();
         }).load(function () {
             calcHeight();
-            });
+        });
 
 
 
