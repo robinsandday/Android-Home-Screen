@@ -28,3 +28,22 @@ Like base url is	https://robinsandday.github.io/Android-Home-Screen/index.html?u
  
                document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
 
+
+
+David's COmments from Sunny's Email.
+
+I make changes in readme file .
+now you can make everyurl dynamic using that code .. 
+
+Like base url is 
+
+https://robinsandday.github.io/Android-Home-Screen/index.html 
+
+dynamic url is https://salesjourney2.knack.com/digital-deal-file-orders#dialog-order-information/new-digital-deal-file/customer-details/5dd679a47e9c3700168213ce
+
+Then you send url to client 
+https://robinsandday.github.io/Android-Home-Screen/index.html?Dynamicurl= https://salesjourney2.knack.com/digital-deal-file-orders#dialog-order-information/new-digital-deal-file/customer-details/5dd679a47e9c3700168213ce 
+
+Regards,
+Sunny Singla
+
