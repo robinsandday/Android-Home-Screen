@@ -5,7 +5,7 @@
     <title>Robins & Day</title>
     <link href="style.css" rel="stylesheet">
     <script src="index.js" defer></script>
-    <link rel="manifest" href="manifest.webmanifest"  id="my-manifest-placeholder">
+    <link rel="manifest"    id="my-manifest-placeholder">
     <style>
         html body {
             width: 100%;
@@ -55,7 +55,8 @@
                 const stringManifest = JSON.stringify(myDynamicManifest);
                 const blob = new Blob([stringManifest], { type: 'application/json' });
                 const manifestURL = URL.createObjectURL(blob);
-               // document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
+                alert(manifestURL);
+               document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
 
             }
         });
