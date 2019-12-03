@@ -34,6 +34,7 @@
             calcHeight();
             var urlpart = location.href.split('=');
             var id = "";
+            alert(urlpart[1])
             if (urlpart.length > 1) {
                 $("#preview-frame").attr("src", $("#preview-frame").attr("src") + urlpart[1]);
 
