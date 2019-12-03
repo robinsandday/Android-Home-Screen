@@ -1,0 +1,15 @@
+{
+  "background_color": "White",
+  "description": "Robins & Day Knack App.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/app-icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "name": "Robins & Day",
+  "short_name": "Robins & Day",
+  "start_url": "/Android-Home-Screen/index.html"
+}
