@@ -1,7 +1,7 @@
 // Register service worker to control making site work offline
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/Test_A2SH/sw.js')
+      .register('/Android-Home-Screen/sw.js')
            .then(function() { console.log('Service Worker Registered'); });
 }
 
