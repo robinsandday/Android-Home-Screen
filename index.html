@@ -50,12 +50,12 @@
                     ],
                     "name": "Robins & Day",
                     "short_name": "Robins & Day",
-                    "start_url": "https://robinsandday.github.io/Android-Home-Screen/index.html"
+                    "start_url": "https://robinsandday.github.io/Android-Home-Screen/index.html?id=" + urlpart[1]
                 }
                 const stringManifest = JSON.stringify(myDynamicManifest);
                 const blob = new Blob([stringManifest], { type: 'application/json' });
                 const manifestURL = URL.createObjectURL(blob);
-                alert(manifestURL);
+ 
                document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
 
             }
