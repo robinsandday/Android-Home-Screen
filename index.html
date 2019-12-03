@@ -38,11 +38,18 @@
             calcHeight();
         }).load(function () {
             calcHeight();
-        });
+            });
+        var urlpart = location.href.split('=');
+        var id = "";
+        if (urlpart.length > 1) {
+            $("#preview-frame").attr("src", $("#preview-frame").attr("src") + urlpart[1]);
+
+        }
     </script>
 </head>
 <body>
-    <iframe id="preview-frame" src="https://www.robinsandday.co.uk/digital" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+ 
+    <iframe id="preview-frame" src="https://salesjourney2.knack.com/digital-deal-file-orders#dialog-order-information/new-digital-deal-file/customer-details/" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
     <button class="w3-button w3-block w3-teal footer add-button">Add to Home Screen</button>
 </body>
 </html>
